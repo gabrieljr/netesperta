@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Infonet Esperta",
+	"description": "Extensao p/ comprar meu S6 pourra",
+	"version": "0.0.10",
+	"icons": { "128": "icon128.png" },
+	"content_scripts": [
+		{
+			"matches": [ "*://www.ofertaesperta.com/*" ],
+			"js": [ "ofertaEsperta.js" ]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"notifications"
+	]
+}
